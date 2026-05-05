@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Kopi Nusantara</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="brand">☕ Kopi Nusantara</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="keranjang.html">Keranjang <span class="badge" id="cartBadge">0</span></a></li>
+      <li><a href="pembayaran.html">Pembayaran</a></li>
+    </ul>
+  </nav>
+
+  <section class="section section-alt" style="padding-top:6.5rem;">
+    <div class="container">
+      <span style="font-size:.75rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--latte);">Hubungi Kami</span>
+      <h2 class="sec-title" style="margin-top:.35rem;">Kami Senang <em>Mendengarmu</em></h2>
+      <p class="sec-sub">Ada pertanyaan, saran, atau sekadar ingin menyapa? Jangan ragu untuk menghubungi kami.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="c-icon">📍</span>
+            <div><strong>Alamat</strong><p>Jl. Pahlawan No. 104, Palembang</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">🕐</span>
+            <div><strong>Jam Buka</strong><p>Setiap hari, 07.00 – 22.00 WIB</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📞</span>
+            <div><strong>Telepon</strong><p>(0821) 2678-6547</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📧</span>
+            <div><strong>Email</strong><p>halo@kopinusantara.id</p></div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📱</span>
+            <div><strong>Instagram</strong><p>@kopinusantara</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="submitContact(event)">
+          <h3>Kirim Pesan</h3>
+          <input type="text" placeholder="Nama kamu" required/>
+          <input type="email" placeholder="Email kamu" required/>
+          <textarea placeholder="Pesan kamu..." rows="5" required></textarea>
+          <button type="submit" class="btn full">Kirim Pesan ✉️</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><strong>☕ Kopi Nusantara</strong></p>
+    <p>Jl. Pahlawan No. 104, Palembang · Buka setiap hari 07.00 – 22.00 WIB</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

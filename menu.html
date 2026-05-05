@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu – Kopi Nusantara</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="brand">☕ Kopi Nusantara</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="keranjang.html">Keranjang <span class="badge" id="cartBadge">0</span></a></li>
+      <li><a href="pembayaran.html">Pembayaran</a></li>
+    </ul>
+  </nav>
+
+  <section class="section" style="padding-top:6.5rem;" id="menu">
+    <div class="container">
+      <!-- BEST SELLERS -->
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:.5rem;">
+        <div>
+          <span style="font-size:.75rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--latte);">⭐ Pilihan Terpopuler</span>
+          <h2 class="sec-title" style="margin-top:.35rem;margin-bottom:.25rem;">Best <em>Sellers</em></h2>
+          <p class="sec-sub" style="margin-bottom:0;">Menu favorit pelanggan setia kami — diseduh penuh semangat setiap harinya.</p>
+        </div>
+        <a href="keranjang.html" class="btn outline">Lihat Keranjang 🛒</a>
+      </div>
+
+      <div class="grid" id="bestSellerGrid" style="margin-top:2rem;"></div>
+
+      <!-- ALL MENU -->
+      <div style="margin-top:4rem;">
+        <h2 class="sec-title">Semua <em>Menu</em></h2>
+        <p class="sec-sub">Jelajahi seluruh pilihan menu kami dan temukan favoritmu.</p>
+        <div class="tabs">
+          <button class="tab active" data-cat="all">Semua</button>
+          <button class="tab" data-cat="hot">Hot ☕</button>
+          <button class="tab" data-cat="cold">Cold 🧊</button>
+          <button class="tab" data-cat="snack">Snack 🍪</button>
+        </div>
+        <div class="grid" id="menuGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><strong>☕ Kopi Nusantara</strong></p>
+    <p>Jl. Pahlawan No. 104, Palembang · Buka setiap hari 07.00 – 22.00 WIB</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

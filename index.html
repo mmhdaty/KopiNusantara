@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kopi Nusantara – Beranda</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="brand">☕ Kopi Nusantara</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="keranjang.html">Keranjang <span class="badge" id="cartBadge">0</span></a></li>
+      <li><a href="pembayaran.html">Pembayaran</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-tag">☕ Kopi Autentik Indonesia</span>
+      <h1>Rasakan Jiwa<br/><em>Nusantara</em><br/>Dalam Setiap Tegukan</h1>
+      <p class="hero-desc">
+        Kopi Nusantara hadir untuk menemanimu — dari pagi yang tenang hingga sore yang hangat.
+        Kami menyajikan kopi pilihan terbaik dari perkebunan lokal Aceh, Toraja, dan Flores,
+        diolah dengan penuh cinta oleh barista berpengalaman kami.
+      </p>
+      <p class="hero-desc" style="margin-bottom:1.75rem;">
+        Setiap cangkir yang kamu pegang adalah hasil dari perjalanan panjang —
+        dari tanah subur pegunungan Indonesia, melewati tangan para petani mitra kami,
+        hingga ke mejamu. Bukan sekadar kopi, ini adalah pengalaman.
+      </p>
+      <div class="hero-features">
+        <span class="hero-feature">🌿 100% Biji Kopi Lokal</span>
+        <span class="hero-feature">👨‍🍳 Barista Bersertifikat</span>
+        <span class="hero-feature">🤝 Langsung dari Petani</span>
+        <span class="hero-feature">♻️ Kemasan Ramah Lingkungan</span>
+        <span class="hero-feature">⏰ Buka Setiap Hari 07.00 – 22.00</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-photo-wrap" id="heroPhotoWrap" style="display:none;">
+        <img src="" alt="Kopi Nusantara" id="heroPhoto" onerror="showHeroPlaceholder()"/>
+      </div>
+      <div class="hero-photo-placeholder" id="heroPlaceholder">
+        <span>📷</span>
+        <p>Foto Beranda</p>
+        <small>Ganti src="FOTO_KAMU.jpg" di index.html</small>
+      </div>
+      <div class="hero-badges" id="heroBadges">
+        <div class="hero-badge">
+          <span class="hb-num">50+</span>
+          <span class="hb-label">Petani Mitra</span>
+        </div>
+        <div class="hero-badge">
+          <span class="hb-num">10K+</span>
+          <span class="hb-label">Pelanggan</span>
+        </div>
+        <div class="hero-badge">
+          <span class="hb-num">3</span>
+          <span class="hb-label">Daerah Asal</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section" style="padding-top:5rem;padding-bottom:4rem;">
+    <div class="container">
+      <h2 class="sec-title">Mengapa <em>Memilih Kami?</em></h2>
+      <p class="sec-sub">Kami bukan sekadar kedai kopi biasa. Ini adalah ruang untuk memperlambat langkah dan menikmati momen.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;margin-top:1.5rem;">
+        <div class="stat" style="text-align:left;padding:1.75rem;">
+          <span style="font-size:2rem;display:block;margin-bottom:.75rem;">🌱</span>
+          <strong style="display:block;font-size:1rem;color:var(--brown);margin-bottom:.4rem;">Sumber Terpercaya</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.7;">Kami bermitra langsung dengan petani di Gayo, Toraja, dan Flores. Tidak ada perantara — hanya kepercayaan.</p>
+        </div>
+        <div class="stat" style="text-align:left;padding:1.75rem;">
+          <span style="font-size:2rem;display:block;margin-bottom:.75rem;">☕</span>
+          <strong style="display:block;font-size:1rem;color:var(--brown);margin-bottom:.4rem;">Diseduh dengan Keahlian</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.7;">Barista kami terlatih dengan standar internasional, memastikan setiap cangkir sempurna dari aroma hingga rasa terakhir.</p>
+        </div>
+        <div class="stat" style="text-align:left;padding:1.75rem;">
+          <span style="font-size:2rem;display:block;margin-bottom:.75rem;">🏡</span>
+          <strong style="display:block;font-size:1rem;color:var(--brown);margin-bottom:.4rem;">Ruang yang Nyaman</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.7;">Interior hangat dengan pencahayaan lembut — tempat yang cocok untuk bekerja, bersantai, atau mengobrol dengan sahabat.</p>
+        </div>
+        <div class="stat" style="text-align:left;padding:1.75rem;">
+          <span style="font-size:2rem;display:block;margin-bottom:.75rem;">🍪</span>
+          <strong style="display:block;font-size:1rem;color:var(--brown);margin-bottom:.4rem;">Snack Homemade</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.7;">Setiap kudapan dibuat sendiri setiap hari, tanpa pengawet, menggunakan bahan-bahan segar pilihan yang berkualitas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <div style="background:var(--coffee);padding:3.5rem 2rem;text-align:center;">
+    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2.2rem);color:rgba(255,255,255,.92);font-style:italic;max-width:680px;margin:0 auto;line-height:1.5;">
+      "Secangkir kopi yang baik bukan hanya tentang rasa — ini tentang momen, tentang cerita,<br/> dan tentang orang-orang yang menikmatinya bersama."
+    </p>
+    <p style="color:rgba(255,255,255,.6);font-size:.85rem;margin-top:1rem;font-weight:500;">— Tim Kopi Nusantara</p>
+  </div>
+
+  <!-- VISIT US -->
+  <section class="section" style="padding-bottom:4.5rem;">
+    <div class="container">
+      <h2 class="sec-title">Kunjungi <em>Kami</em></h2>
+      <p class="sec-sub">Nikmati pengalaman ngopi langsung di kedai kami. Kami menantikan kehadiranmu.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;">
+        <div class="cart-item" style="flex-direction:column;align-items:flex-start;gap:.5rem;">
+          <span style="font-size:1.75rem;">📍</span>
+          <strong style="font-size:.9rem;color:var(--brown);">Lokasi</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.6;">Jl. Pahlawan No. 104, Palembang</p>
+        </div>
+        <div class="cart-item" style="flex-direction:column;align-items:flex-start;gap:.5rem;">
+          <span style="font-size:1.75rem;">🕐</span>
+          <strong style="font-size:.9rem;color:var(--brown);">Jam Operasional</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.6;">Setiap hari<br/>07.00 – 22.00 WIB</p>
+        </div>
+        <div class="cart-item" style="flex-direction:column;align-items:flex-start;gap:.5rem;">
+          <span style="font-size:1.75rem;">📱</span>
+          <strong style="font-size:.9rem;color:var(--brown);">Media Sosial</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.6;">Instagram &amp; WhatsApp<br/>@kopinusantara</p>
+        </div>
+        <div class="cart-item" style="flex-direction:column;align-items:flex-start;gap:.5rem;">
+          <span style="font-size:1.75rem;">☕</span>
+          <strong style="font-size:.9rem;color:var(--brown);">Pesan Online</strong>
+          <p style="font-size:.875rem;color:var(--muted);line-height:1.6;">Pilih menu favoritmu &amp; pesan langsung dari sini</p>
+          <a href="menu.html" class="btn" style="margin-top:.25rem;padding:.5rem 1.2rem;font-size:.8rem;">Lihat Menu →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p><strong>☕ Kopi Nusantara</strong></p>
+    <p>Jl. Pahlawan No. 104, Palembang · Buka setiap hari 07.00 – 22.00 WIB</p>
+    <p style="margin-top:.5rem;">© 2026 Kopi Nusantara. Dibuat dengan ❤️ untuk para pecinta kopi Indonesia.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
